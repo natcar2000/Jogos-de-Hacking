@@ -1,3 +1,3 @@
-# Conexão remota ao host
--> ssh -p 2220 bandit0@bandit.labs.overthewire.org <-
--> senha: bandit0 <-
+# Conexão com o host
+    ssh -p 2220 bandit0@bandit.labs.overthewire.org
+    senha: bandit0
