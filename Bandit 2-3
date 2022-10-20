@@ -1,0 +1,6 @@
+#PROCURANDO A SENHA
+    cd ~
+    cat "spaces in this filename"  #As aspas devem ser usadas, caso contrário será exibido um erro
+    
+#CONEXÃO COM O HOST
+    ssh -p 2220 bandit3@bandit.labs.overthewire.org
