@@ -1,0 +1,6 @@
+#PROCURANDO A SENHA
+    cd ~
+    rev - | rev  #Ignora o meta-caractere, inverte o conteúdo e depois volta para a posição correta
+    
+#CONEXÃO AO HOST
+    ssh -p 2220 bandit2@bandit.labs.overthewire.org 
