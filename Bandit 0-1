@@ -1,6 +1,0 @@
-#PROCURANDO A SENHA
-    cd ~
-    cat readme
-
-#CONEXÃO COM O HOST
-    ssh -p 2220 bandit1@bandit.labs.overthewire.org
