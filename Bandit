@@ -1,5 +1,5 @@
 NÍVEL 0
-    # Conexão com o host
+    # CONEXÃO COM O HOST
     ssh -p 2220 bandit0@bandit.labs.overthewire.org
     senha: bandit0
    
