@@ -1,1 +1,28 @@
+NÍVEL 0
+    # Conexão com o host
+    ssh -p 2220 bandit0@bandit.labs.overthewire.org
+    senha: bandit0
+   
+NÍVEL 0-1
+    #PROCURANDO A SENHA
+    cd ~
+    cat readme
 
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit1@bandit.labs.overthewire.org
+    
+NÍVEL 1-2
+    #PROCURANDO A SENHA
+    cd ~
+    rev - | rev  #Ignora o meta-caractere, inverte o conteúdo e depois volta para a posição correta
+    
+    #CONEXÃO AO HOST
+    ssh -p 2220 bandit2@bandit.labs.overthewire.org 
+    
+NÍVEL 2-3
+    #PROCURANDO A SENHA
+    cd ~
+    cat "spaces in this filename"  #As aspas devem ser usadas, caso contrário será exibido um erro
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit3@bandit.labs.overthewire.org
