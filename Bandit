@@ -35,3 +35,11 @@ NÍVEL 3-4
     
     #CONEXÃO COM O HOST
     ssh -p 2220 bandit4@bandit.labs.overthewire.org
+    
+nível 4-5
+    #PROCURANDO A SENHA
+    cd ~/inhere
+    cat < -file07
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220  bandit5@bandit.labs.overthewire.org
