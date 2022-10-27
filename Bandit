@@ -86,7 +86,7 @@ NÍVEL 9-10
     
 NÍVEL 10-11
     #PROCURANDO A SENHA
-    cat data.txt | base64 --decode 
+    cat data.txt | base64 --decode ! cut -d " " -f 4
     
     #CONEXÃO COM O HOST
     ssh -p 2220 bandit11@bandit.labs.overthewire.org
