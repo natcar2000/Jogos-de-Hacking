@@ -36,10 +36,57 @@ NÍVEL 3-4
     #CONEXÃO COM O HOST
     ssh -p 2220 bandit4@bandit.labs.overthewire.org
     
-nível 4-5
+NÍVEL 4-5
     #PROCURANDO A SENHA
     cd ~/inhere
     cat < -file07
     
     #CONEXÃO COM O HOST
     ssh -p 2220  bandit5@bandit.labs.overthewire.org
+
+NÍVEL 5-6
+    #PROCURANDO A SENHA
+    cd ~/inhere
+    find -type f -size 1033c #Resultado: ./maybehere07/.file2
+    cd maybehere07
+    ls -a
+    cat .file2
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit6@bandit.labs.overthewire.org
+    
+NÍVEL 6-7
+    #PROCURANDO A SENHA
+    find / -user bandit7 -group bandit6 -type f -size 33c 2>/dev/null #Resultado: /var/lib/dpkg/info/bandit7.password
+    cat /var/lib/dpkg/info/bandit7.password
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit7@bandit.labs.overthewire.org
+
+NÍVEL 7-8
+    #PROCURANDO A SENHA
+    cat data.txt | grep "millionth" | cut -c 11-42
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit8@bandit.labs.overthewire.org
+    
+NÍVEL 8-9
+    # PROCURANDO A SENHA
+    cat data.txt | sort | uniq -u 
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit9@bandit.labs.overthewire.org
+ 
+NÍVEL 9-10
+    #PROCURANDO A SENHA
+    cat data.txt | grep ^"=" | grep "G7" | cut -c 12-43 
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit10@bandit.labs.overthewire.org
+    
+NÍVEL 10-11
+    #PROCURANDO A SENHA
+    cat data.txt | base64 --decode 
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit11@bandit.labs.overthewire.org
