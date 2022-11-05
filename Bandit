@@ -90,3 +90,49 @@ NÍVEL 10-11
     
     #CONEXÃO COM O HOST
     ssh -p 2220 bandit11@bandit.labs.overthewire.org
+   
+NÍVEL 11-12
+    #PROCURANDO A SENHA
+    cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' | cut -d " " -f 4  #Com o cut, selecionamos apenas a senha propriamente dita
+    
+    #CONEXÃO COM O HOST
+    ssh -p 2220 bandit12@bandit.labs.overthewire.org
+    
+NÍVEL 12-13
+     #PROCURANDO A SENHA
+     mkdir /tmp/myname123
+     cd /tmp/myname123 
+     xxd -r ~/data.txt > arquivo
+     
+     file arquivo 
+     mv arquivo arquivo.gz
+     gunzip arquivo.gz
+     
+     file arquivo 
+     mv arquivo arquivo.bz2
+     bunzip2 arquivo.bz2
+     
+     file arquivo 
+     mv arquivo arquivo.gz
+     gunzip arquivo.gz
+     
+     file arquivo 
+     mv arquivo arquivo.tar
+     tar -xvf arquivo.tar
+     
+     file data5.bin 
+     tar -xvf data5.bin
+     
+     file data6.bin
+     mv data6.bin.out data6.bz2
+     file data6.bin.out
+     mv data6.bin.out data6.tar
+     tar -xvf data6.tar
+     
+     file data8.bin
+     mv data8.bin data8.gz
+     gunzip data8.gz
+     cat data8 | cut -d " " -f 4
+     
+     #CONEXÃO AO HOST
+     ssh -p 2220 bandit13@bandit.labs.overthewire.org
