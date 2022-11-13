@@ -136,3 +136,7 @@ NÍVEL 12-13
      
      #CONEXÃO AO HOST
      ssh -p 2220 bandit13@bandit.labs.overthewire.org
+     
+NÍVEL 13-14
+     # CONEXÃO AO HOST
+     ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
