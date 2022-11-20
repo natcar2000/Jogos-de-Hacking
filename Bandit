@@ -140,3 +140,13 @@ NÍVEL 12-13
 NÍVEL 13-14
      # CONEXÃO AO HOST
      ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+     
+NÍVEL 14-15
+     # PROCURANDO A SENHA DO NÍVEL ATUAL
+     cd /etc/bandit_pass (a senha fica no arquivo bandit14)
+     
+     # RECUPERANDO A SENHA DO PRÓXIMO NÍVEL
+     nc localhost 30000 < bandit14
+     
+     # CONEXÃO COM O HOST
+     ssh -p 2220 bandit15@bandit.labs.overthewire.org
