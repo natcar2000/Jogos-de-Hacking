@@ -160,3 +160,10 @@ NÍVEL 15-16
     
     # CONEXÃO COM O HOST
     ssh -p 2220 bandit16@bandit.labs.overthewire.org
+    
+NÍVEL 16-17
+    # SCAN PARA SABER QUAIS PORTAS ESTÃO ABERTAS
+    nmap bandit.labs.overthewire.org -p 31000-32000 
+    
+    # RECUPERANDO AS CREDENCIAIS PARA O PRÓXIMO NÍVEL
+    openssl s_client --connect localhost:porta
