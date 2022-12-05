@@ -150,3 +150,13 @@ NÍVEL 14-15
      
      # CONEXÃO COM O HOST
      ssh -p 2220 bandit15@bandit.labs.overthewire.org
+    
+NÍVEL 15-16
+    # CONEXÃO CRIPTOGRAFADA COM O SERVIDOR
+    openssl s_client --connect bandit.labs.overthewire.org:30001 
+    
+    # RECUPERANDO A SENHA DO PRÓXIMO NÍVEL
+    <Cole o conteúdo da senha atual debaixo de "read R BLOCK">
+    
+    # CONEXÃO COM O HOST
+    ssh -p 2220 bandit16@bandit.labs.overthewire.org
